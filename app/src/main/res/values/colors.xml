@@ -8,4 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#BC002AFF</color>
+    <color name="coal">#2E221B</color>
+
+    <color name="gplus_green">#3e802f</color>
+    <color name="gplus_yellow">#f4b400</color>
+    <color name="gplus_light_blue">#427fed</color>
+    <color name="gplus_red">#b23424</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_green</item>
+        <item>@color/gplus_yellow</item>
+        <item>@color/gplus_light_blue</item>
+        <item>@color/gplus_red</item>
+    </integer-array>
 </resources>

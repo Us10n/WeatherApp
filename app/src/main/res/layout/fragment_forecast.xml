@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.TodayWeatherFragment">
+    tools:context=".fragment.ForecastFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolBar"
@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/today"
+            android:text="@string/forecast"
             android:textColor="@color/coal" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -36,5 +36,16 @@
 
     </fr.castorflex.android.smoothprogressbar.SmoothProgressBar>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forecastRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradient"
+        tools:listitem="@layout/day_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
