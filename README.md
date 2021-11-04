@@ -15,5 +15,4 @@
 - Geolocation for determining the current position of the device
 - RxJava for async operations
 - Material Design Guidelines + Material Design Icon
-- Use the design for the application provided below (it is mockup, not final design)
 - Share weather as text
