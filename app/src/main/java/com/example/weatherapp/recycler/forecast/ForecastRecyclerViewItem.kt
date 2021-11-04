@@ -1,17 +1,17 @@
 package com.example.weatherapp.recycler.forecast
 
-sealed class ForecastRecyclerViewItem{
+sealed class ForecastRecyclerViewItem {
 
-    class Day(
-        val id: Int,
-        val title:String
-    ):ForecastRecyclerViewItem()
+    data class Day(
+        val title: String
+    ) : ForecastRecyclerViewItem()
 
-    class Weather(
-        val id: Int,
-        val img: String,
-        val time:String,
+    data class Weather(
+        val id:Long,
+        val dayPart: String,
+        val img: Int,
+        val time: String,
         val status: String,
-        val temperature: Int
-    ): ForecastRecyclerViewItem()
+        val temperature: Double
+    ) : ForecastRecyclerViewItem()
 }

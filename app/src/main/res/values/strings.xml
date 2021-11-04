@@ -5,4 +5,12 @@
     <string name="forecast">Forecast</string>
 
     <string name="day">Day</string>
+
+    <string name="gpsEnable">Check GPS connection</string>
+    <string name="permissionEnable">Enable location permission</string>
+    <string name="internetEnable">Check internet connection</string>
+
+    <string name="share">Share</string>
+    <string name="blank">--</string>
+    <string name="retry">Retry</string>
 </resources>

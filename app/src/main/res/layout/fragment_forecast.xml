@@ -24,6 +24,7 @@
             android:textColor="@color/coal" />
     </androidx.appcompat.widget.Toolbar>
 
+
     <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
         android:id="@+id/gradient"
         style="@style/GradientProgressBar"
@@ -32,20 +33,21 @@
         android:indeterminate="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+        app:layout_constraintTop_toBottomOf="@id/toolBar">
 
     </fr.castorflex.android.smoothprogressbar.SmoothProgressBar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/forecastRecycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gradient"
+        app:layout_constraintTop_toBottomOf="@id/gradient"
         tools:listitem="@layout/day_item" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
