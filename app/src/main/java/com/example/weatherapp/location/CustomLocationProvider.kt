@@ -46,8 +46,11 @@ class CustomLocationProvider(private var context: Context) : LiveData<DeviceLoca
 
     private fun locationChangedNotify(location: Location) {
         val geocoder = Geocoder(context, Locale.ENGLISH)
-        val city =
+        var city =
             geocoder.getFromLocation(location.latitude, location.longitude, 1)[0].locality
+        if(city==null){
+            city="unknown"
+        }
         postValue(DeviceLocation(location.latitude, location.longitude, city))
     }
 
